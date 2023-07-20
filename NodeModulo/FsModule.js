@@ -1,24 +1,19 @@
-const fs=require("fs/promises");
+const fs=require("fs");
 // console.log(fs)
 // fs.readFile
     // Synchronous:-
     // const data= fs.readFileSync("./data.txt",{encoding:"utf-8"}) 
     // console.log(data);  
     //Asynchronus
-    // fs.readFile("./data.txt",{encoding:"utf-8"},(err,data)=>{
-    //     if(!err){
+    // const FileReading= async ()=>{
+    //     try {
+    //         const data=await fs.readFile("./mynewfile2.txt","utf-8")
     //         console.log(data);
-    //     }else{
-    //         console.log(error)
-    //     }
-    // })
-        //or
-    // try {
-    //     const data=fs.readFile("./data.txt",{encoding:"utf-8"});
-    //     console.log(data)
-    // } catch (error) {
-    //     console.log(error)
+    //       } catch (error) {
+    //           console.log(error);
+    //       }
     // }
+    // FileReading()
 // fs.writeFile(Overwrite In The File)
     // Synchonous:-
         // fs.writeFileSync("./data.txt","Hi from writeFileSync")
@@ -39,7 +34,7 @@ const fs=require("fs/promises");
 // fs.unlink(Delete The File)
     // fs.unlink("./RenamedData.txt");
 // fs.open(Create a file);
-fs.open('mynewfile2.txt','w',0o666);
+// fs.open('mynewfile2.txt','w',0o666);
 // fs.copy
 
 
